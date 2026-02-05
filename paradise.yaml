@@ -1,0 +1,38 @@
+scenes:
+  - id: sky
+    label: "天空"
+    food_categories:
+      - "鸡类"
+      - "玉米类"
+      - "糖浆类"
+      - "杂食类"
+  - id: land
+    label: "陆地"
+    food_categories:
+      - "肉类"
+      - "蔬果类"
+      - "虫类"
+      - "杂食类"
+  - id: ocean
+    label: "海洋"
+    food_categories:
+      - "海鲜类"
+      - "海藻类"
+      - "虾类"
+      - "杂食类"
+  - id: emerald_forest
+    label: "翠林"
+    food_categories:
+      - "烤鸭类"
+      - "竹草类"
+      - "石榴类"
+      - "杂食类"
+
+miss_num:    
+  count: 
+    - "0"
+    - "0~1"
+    - "2~5" 
+    - "6+"
+
+

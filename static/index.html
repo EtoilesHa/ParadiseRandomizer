@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>拓麻随机许愿机</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="shell">
+        <header class="hero">
+            <p class="eyebrow">Paradise Randomizer</p>
+            <h1>挑选机型，许下心愿</h1>
+            <p class="lede">填好机型与留言，点击按钮即可掷骰子，看看拓麻歌子会带来哪种场景与美食。</p>
+        </header>
+
+        <section class="panel">
+            <form id="wish-form" class="form">
+                <div class="form-section">
+                    <div class="section-header">
+                        <h2>请选择机型</h2>
+                        <span class="hint">点击卡片即可锁定</span>
+                    </div>
+                    <div class="machine-grid">
+                        <button type="button" class="machine-card" data-machine="天空机">
+                            <img src="images/sky.svg" alt="天空机" />
+                            <span>天空机</span>
+                        </button>
+                        <button type="button" class="machine-card" data-machine="陆地机">
+                            <img src="images/land.svg" alt="陆地机" />
+                            <span>陆地机</span>
+                        </button>
+                        <button type="button" class="machine-card" data-machine="海洋机">
+                            <img src="images/ocean.svg" alt="海洋机" />
+                            <span>海洋机</span>
+                        </button>
+                        <button type="button" class="machine-card" data-machine="翠林机">
+                            <img src="images/forest.svg" alt="翠林机" />
+                            <span>翠林机</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label for="wish-input">许愿留言</label>
+                    <textarea id="wish-input" name="wish" rows="4" placeholder="写下一段心情、愿望或随机内容…"></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="primary">掷骰子</button>
+                    <p class="status" id="status-text"></p>
+                </div>
+            </form>
+
+            <div id="result-card" class="result-card hidden">
+                <h3>随机结果</h3>
+                <div class="result-row">
+                    <span>场景</span>
+                    <strong id="scene-value">—</strong>
+                </div>
+                <div class="result-row">
+                    <span>食物</span>
+                    <strong id="food-value">—</strong>
+                </div>
+                <div class="result-row">
+                    <span>miss 档位</span>
+                    <strong id="miss-value">—</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

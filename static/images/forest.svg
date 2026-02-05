@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="forestGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dfffd2" />
+      <stop offset="100%" stop-color="#b4f3d6" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="url(#forestGradient)" />
+  <path d="M20 95 L60 20 L100 95 Z" fill="#5fbb98" opacity="0.85" />
+  <rect x="53" y="70" width="14" height="30" rx="4" fill="#c08d5d" />
+</svg>

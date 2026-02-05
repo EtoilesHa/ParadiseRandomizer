@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c6e7ff" />
+      <stop offset="100%" stop-color="#d5fff9" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="url(#oceanGradient)" />
+  <path d="M10 70 Q25 55 40 70 T70 70 T100 70 V120 H10 Z" fill="#6aaedb" opacity="0.75" />
+  <path d="M30 50 C40 45 50 55 60 50 C70 45 80 55 90 50" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" />
+</svg>
