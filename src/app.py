@@ -2,19 +2,20 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from flask import Flask, jsonify, request, send_from_directory
+from flask import Flask, jsonify, request, send_file
 
 from random_tm import MACHINE_OPTIONS, pick_scene_and_food
 
-BASE_DIR = Path(__file__).parent
-STATIC_DIR = BASE_DIR / "static"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+STATIC_DIR = PROJECT_ROOT / "static"
+INDEX_FILE = PROJECT_ROOT / "index.html"
 
-app = Flask(__name__, static_folder=str(STATIC_DIR), static_url_path="")
+app = Flask(__name__, static_folder=str(STATIC_DIR), static_url_path="/static")
 
 
 @app.route("/")
 def serve_index():
-    return send_from_directory(app.static_folder, "index.html")
+    return send_file(INDEX_FILE)
 
 
 @app.route("/api/random", methods=["POST"])

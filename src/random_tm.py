@@ -7,8 +7,8 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any, Dict, List
 
-
-PARADISE_FILE = Path(__file__).with_name("paradise.yaml")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PARADISE_FILE = PROJECT_ROOT / "conf" / "paradise.yaml"
 MACHINE_OPTIONS = ["天空机", "陆地机", "海洋机", "翠林机"]
 
 
